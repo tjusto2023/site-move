@@ -74,6 +74,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html', // Arquivo de template HTML
       inject: true, // Injeta os arquivos JS e CSS no HTML gerado
+      hash: true
     }),
     // new ImageMinimizerPlugin({
     //   minimizerOptions: {
