@@ -1,0 +1,53 @@
+$neutral: #F6F6F6;
+
+.bkg-main {
+    background-color: $neutral;
+}
+
+.bkg-green-100 {
+    background-color: #90CA84;
+}
+
+.bkg-green-200 {
+    background-color: #5bd071;
+}
+
+.bkg-green-300 {
+    background-color: #184b2f;
+}
+
+.bkg-gray-200 {
+    background-color: #D7D7D7;
+}
+
+.bkg-gray-300 {
+    background-color: #545454;
+}
+
+.color-green-300 {
+    color: #184b2f;
+}
+
+.color-neutral {
+    color: $neutral;
+}
+
+.color-inverse {
+    color: #212121;
+}
+
+.color-gray-300 {
+    color: #545454 !important;
+}
+
+.border-neutral {
+    border: 1px solid $neutral;
+}
+
+.border-inverse {
+    border: 1px solid #212121;
+}
+
+.border-gray-300 {
+    border: 1px solid $neutral;
+}
