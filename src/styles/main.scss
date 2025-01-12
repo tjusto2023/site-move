@@ -31,6 +31,12 @@ $border-radius: 20px;
 $button-radius: 8px;
 $padding: 12px;
 
+body {
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+}
+
 .bkg-img {
     border-radius: $border-radius;
     width: auto;
@@ -86,6 +92,20 @@ $padding: 12px;
     align-items: center;
 }
 
+a {
+    &:hover {
+        color: c.$green-200 !important;
+    }
+
+    &.button-outline, &.button-filled {
+        &:hover {
+            color: c.$green-100 !important;
+            background-color: c.$green-200 !important;
+            border: 1px solid c.$green-200 !important;
+        }
+    }
+}
+
 header {
     padding: 30px 0;
 
@@ -106,8 +126,47 @@ header {
         justify-content: end;
         gap: 25px;
 
+        .close-button {
+            display: none;
+        }
+
         @include for-phone-only {
             display: none;
+
+            &.active {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                background: c.$green-200;
+                z-index: 999;
+                top: 0;
+                left: 0;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: center;
+
+                .close-button {
+                    content: "X";
+                    display: block;
+                    position: absolute; 
+                    top: 20px;
+                    right: 20px; 
+                    font-size: 24px;
+                    padding: 10px;
+                    font-weight: 700;
+                    color: c.$neutral !important;
+                    cursor: pointer; 
+                }
+
+                a {
+                    font-size: 20px;
+                    padding: 20px 0;
+                    font-weight: 700;
+                    color: c.$gray-300 !important;
+                }
+            }
         }
 
         a {
@@ -271,8 +330,10 @@ main {
                 }
 
                 .bkg-img-peca {
-                    display: block;
                     position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     @include for-phone-only {
                         display: none
@@ -281,7 +342,6 @@ main {
                     .img-peca {
                         @extend .bkg-img;
                         position: absolute;
-                        top: -200px;
                         background-image: url('../images/img-peca-explodida.png');
                         background-size: contain;
                         padding-top: 98.84%;
@@ -437,5 +497,28 @@ footer {
             display: grid;
             gap: 10px;            
         }
-    }    
+    }
+
+    .social-media {
+        gap: 10px;
+        
+        .instagram, .linkedin, .whatsapp {
+            @extend .bkg-img;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+        }
+
+        .instagram { 
+            background-image: url('../images/instagram.png');
+        }
+
+        .linkedin {
+            background-image: url('../images/linkedin.png');
+        }
+
+        .whatsapp {
+            background-image: url('../images/whatsapp.png');
+        }
+    }
 }

@@ -9,3 +9,7 @@ import '../images/apple-touch-icon.png';
 import '../images/favicon-16x16.png';
 import '../images/favicon-32x32.png';
 import '../images/favicon.ico';
+
+import './menu.js';
+import './scroll-slow-motion.js';
+
