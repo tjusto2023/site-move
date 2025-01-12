@@ -202,8 +202,9 @@ header {
 }
 
 main {
-    display: grid;
+    display: flex;
     gap: 40px;
+    flex-direction: column;
 
     section {
         &.hero {           
@@ -521,4 +522,111 @@ footer {
             background-image: url('../images/whatsapp.png');
         }
     }
+}
+.owl-carousel {
+    .owl-item {
+        &:nth-child(1) {
+            .item {
+                background-image: url('../images/carousel/Awaltec.png');
+            }
+        }
+
+        &:nth-child(2) {
+            .item {
+                background-image: url('../images/carousel/BRUM.png');
+            }
+        }
+
+        &:nth-child(3) {
+            .item {
+                background-image: url('../images/carousel/Cation.png');
+            }
+        }
+
+        &:nth-child(4) {
+            .item {
+                background-image: url('../images/carousel/Cestari.png');
+            }
+        }
+
+        &:nth-child(5) {
+            .item {
+                background-image: url('../images/carousel/HIWIN.png');
+            }
+        }
+
+        &:nth-child(6) {
+            .item {
+                background-image: url('../images/carousel/KALATEC.png');
+            }
+        }
+
+        &:nth-child(7) {
+            .item {
+                background-image: url('../images/carousel/KEYENCE.png');
+            }
+        }
+
+        &:nth-child(8) {
+            .item {
+                background-image: url('../images/carousel/SCHMENRSAL.png');
+            }
+        }
+
+        &:nth-child(9) {
+            .item {
+                background-image: url('../images/carousel/SEW.png');
+            }
+        }
+
+        &:nth-child(10) {
+            .item {
+                background-image: url('../images/carousel/SICK.png');
+            }
+        }
+
+        &:nth-child(11) {
+            .item {
+                background-image: url('../images/carousel/SIEMENS.png');
+            }
+        }
+
+        &:nth-child(12) {
+            .item {
+                background-image: url('../images/carousel/TSTech.png');
+            }
+        }
+
+        &:nth-child(13) {
+            .item {
+                background-image: url('../images/carousel/WEG.png');
+            }
+        }
+
+        &:nth-child(14) {
+            .item {
+                background-image: url('../images/carousel/Wirmuller.png');
+            }
+        }
+    }
+}
+
+.owl-carousel .item {
+    text-align: center;
+    padding: 15px;
+    background-color: transparent;  /* Cor de fundo para os itens */
+    color: white;
+    border-radius: 10px;
+    height: 150px; /* Altura fixa */
+    background-size: contain; /* A imagem será ajustada para não cortar */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.owl-carousel {
+    width: 100%; /* Garante que o carrossel respeite o tamanho do contêiner */
+    overflow: hidden; /* Evita scroll horizontal indesejado */
 }

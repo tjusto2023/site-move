@@ -10,6 +10,8 @@ import '../images/favicon-16x16.png';
 import '../images/favicon-32x32.png';
 import '../images/favicon.ico';
 
+import './custom-owl-carousel.js';
 import './menu.js';
 import './scroll-slow-motion.js';
+
 
