@@ -26,6 +26,10 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [
+        {
+          test: /\.html$/,
+          use: ['html-loader'],
+        },
         // Babel Loader para transpilar o código JS
         {
           test: /\.js$/,
